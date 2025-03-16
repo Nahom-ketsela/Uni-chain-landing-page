@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      " @/*": ["./*"]
+      "@/*": ["./*"], // Root-level alias
+      "@/components/*": ["./components/*"], // Alias for components
+      "@/lib/*": ["./lib/*"]  // Alias for the lib directory
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
